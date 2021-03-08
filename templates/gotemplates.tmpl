@@ -1,9 +1,6 @@
-
 {{define "location.url" -}}
-{{.externalEntityId}}-{{.locale}}.html
+{{.externalEntityId}}.html
 {{- end}}
-
-
 {{define "location.source" -}}
 <html>
     <body>
@@ -14,56 +11,16 @@
 </html>
 {{end}}
 
-{{define "product.url" -}}
-{{.externalEntityId}}-{{.locale}}.html
+{{define "city.url" -}}
+{{.externalEntityId}}.html
 {{- end}}
-
-
-{{define "product.source" -}}
+{{define "city.source" -}}
 <html>
     <body>
-        <h1>{{.name}}</h1>
-        <p>SKU: {{.sku}}</p>
-        <p>{{.richTextDescription}}</p>
-        <div>
-            <span>{{.size}}</span>
-            <span>{{.price}}</span>
-        </div>
-    </body>
-</html>
-{{end}}
-
-
-{{define "faq.url" -}}
-{{.externalEntityId}}-{{.locale}}.html
-{{- end}}
-
-
-{{define "faq.source" -}}
-<html>
-    <body>
-        <h1>{{.name}}</h1>
-        <p>{{.answer}}</p>
-    </body>
-</html>
-{{end}}
-
-
-{{define "event.url" -}}
-{{.externalEntityId}}-{{.locale}}.html
-{{- end}}
-
-
-{{define "event.source" -}}
-<html>
-    <body>
-        <h1>{{.name}}</h1>
-        <h2>{{.time}}</h2>
-        <h3>{{.linkedLocation}}</h3>
-        <div>
-            {{.description}}
-        </div>
-        <p>{{.isFreeEvent}}</p>
+        <h1> Welcome to {{.name}}, {{.c_parents.name}}</h1>
+        {{range .c_children}}
+             <h3 class="child"> {{.name}} </h3>
+        {{end}}
     </body>
 </html>
 {{end}}

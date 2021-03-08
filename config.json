@@ -17,27 +17,19 @@
 			}
 		},
 		{
-			"name": "Product Page",
-			"streamLabel": "account-3434922/products",
+			"name": "City Page",
+			"streamLabel": "account-3434922/city",
 			"goTemplateEntityPageSet": {
-				"template": "product.source",
-				"urlTemplate": "product.url"
+				"template": "city.source",
+				"urlTemplate": "city.url"
 			}
 		},
 		{
-			"name": "FAQ Page",
-			"streamLabel": "account-3434922/faqs",
+			"name": "State Page",
+			"streamLabel": "account-3434922/state",
 			"goTemplateEntityPageSet": {
-				"template": "faq.source",
-				"urlTemplate": "faq.url"
-			}
-		},
-		{
-			"name": "Event Page",
-			"streamLabel": "account-3434922/events",
-			"goTemplateEntityPageSet": {
-				"template": "event.source",
-				"urlTemplate": "event.url"
+				"template": "state.source",
+				"urlTemplate": "state.url"
 			}
 		}
 	],
